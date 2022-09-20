@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
+    animation: right 1s infinite;
+}
+
+p:first-child {
+    animation: right 1s infinite;
+}
+
+p:last-child {
+    animation: left 1s infinite;
+}
+
+@keyframes right {
+
+    0% {
+        translate: 800px;
+    }
+
+    100% {
+        translate: 0px;
+    }
+    
+}
+
+@keyframes left {
+
+    0% {
+        translate: -800px;
+    }
+
+    100% {
+        translate: 0px;
+    }
+    
+}
